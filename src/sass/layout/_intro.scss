@@ -1,0 +1,60 @@
+#intro {
+  padding: 235px 0;
+  background: url('../images/bg/intro-bg.jpg') 50% 50% /cover no-repeat;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 0;
+    height: 100vh;
+  }
+
+  /* all styles element (scroll-down, social-list and quote) on the page 'sass/base/_layout' */
+  .scroll-down {
+    position: absolute;
+    left: 2%;
+    bottom: 30%;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: flex;
+    }
+  }
+
+  .social-list {
+    position: absolute;
+    right: 4%;
+    bottom: 80px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      bottom: 27%;
+    }
+  }
+
+  .quote {
+    position: absolute;
+    top: 120px;
+    left: 4%;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: block;
+    }
+  }
+}
+
+.intro-item {
+  position: relative;
+  z-index: 5;
+
+  &-image {
+    max-width: 300px;
+    margin: 0 auto 50px;
+  }
+
+  &-description {
+    p {
+      line-height: 1.875;
+    }
+  }
+}

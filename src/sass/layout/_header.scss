@@ -1,0 +1,178 @@
+#app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 0;
+  z-index: 500;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 0;
+  }
+}
+
+.logo {
+  display: block;
+  max-width: 100px;
+  margin-left: 15px;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    margin-left: 30px;
+  }
+}
+
+.header-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  z-index: 10;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding-right: 90px;
+  }
+
+  &-list {
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: flex;
+    }
+
+    li {
+      margin-right: 40px;
+
+      a {
+        position: relative;
+        display: block;
+        padding: 25px 0;
+        color: $body-color;
+        transition: .5s;
+
+        &:hover {
+          color: $primary;
+
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 4px;
+          background: $primary;
+          transition: .5s;
+        }
+      }
+    }
+  }
+}
+
+.lang-list {
+  position: absolute;
+  top: -10px;
+  right: 55px;
+  background: #fff;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    top: 15px;
+    right: 40px;
+  }
+
+  &-item {
+    display: none;
+    padding: 10px;
+
+    a {
+      color: $body-color;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &-active {
+      display: block;
+
+      a {
+        color: $primary;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.burger-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  overflow: hidden;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    display: none;
+  }
+
+  .line {
+    width: 25px;
+    height: 4px;
+    background: $primary;
+    opacity: 1;
+    transition: .5s;
+    transform-origin: center;
+  }
+
+  &.active {
+
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      &--middle {
+        opacity: 0;
+      }
+
+      &--top {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &--bottom {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 65px 70px 45px 40px;
+  background: #fff;
+  z-index: 5;
+  overflow: auto;
+
+  &-list {
+
+    li {
+      margin-bottom: 35px;
+
+      a {
+        color: $body-color;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
