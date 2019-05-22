@@ -14,6 +14,9 @@ $sections = [
 	'intro',
 	'advantages',
     'about',
+    'target',
+    'partner',
+    'experience',
 ];
 
 foreach ($sections as $section) {

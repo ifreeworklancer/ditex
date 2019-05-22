@@ -60,21 +60,6 @@ window.jQuery = window.$ = jquery;
         $(this).siblings().slideToggle();
     });
 
-    /**
-     * Form
-     */
-    $('.form-control').on('focus', function () {
-        $(this).parents('.form-group').addClass('in-focus');
-    });
-
-    $('.form-control').on('blur', function () {
-        if ($(this).val() !== "") {
-            $(this).parents('.form-group').addClass('in-focus');
-        } else {
-            $(this).parents('.form-group').removeClass('in-focus');
-        }
-    });
-
 
     /**
      * Phone mask
@@ -90,20 +75,20 @@ window.jQuery = window.$ = jquery;
     /**
      * Modal
      */
-    var connectModal = $('.custom-modal--partner');
-    var orderModal = $('.custom-modal--quest');
+    var parentModal = $('.custom-modal--partner');
+    var questModal = $('.custom-modal--quest');
     var closeModal = $('.close-modal');
     var modalMask = $('.modal-mask');
 
-    $('.open-connect').on('click', function (e) {
+    $('.open-partner').on('click', function (e) {
         e.preventDefault();
-        $(connectModal).addClass('active');
+        $(parentModal).addClass('active');
         $(modalMask).addClass('active');
     });
 
-    $('.open-order').on('click', function (e) {
+    $('.open-quest').on('click', function (e) {
         e.preventDefault();
-        $(orderModal).addClass('active');
+        $(questModal).addClass('active');
         $(modalMask).addClass('active');
         $("[name='car_title']").val($(this).data('cartitle'));
     });
@@ -115,44 +100,79 @@ window.jQuery = window.$ = jquery;
     }
 
     $(closeModal).on('click', function () {
-        $(connectModal).removeClass('active');
-        $(orderModal).removeClass('active');
+        $(parentModal).removeClass('active');
+        $(questModal).removeClass('active');
         $(modalMask).removeClass('active');
     });
 
     $(modalMask).on('click', function () {
-        $(connectModal).removeClass('active');
-        $(orderModal).removeClass('active');
+        $(parentModal).removeClass('active');
+        $(questModal).removeClass('active');
         $(modalMask).removeClass('active');
     });
 
     /**
      * Animate scroll
      */
-    // ScrollReveal().reveal('.intro-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.intro-order', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-item', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.pain-beforeAfter', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.response-item', {
-    //     origin: 'bottom',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
+    ScrollReveal().reveal('.intro-item', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.quote', {
+        origin: 'top',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.social-list', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.advantages-item', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.about-item', {
+        origin: 'left',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.about-image', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.target-item-main', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.target-item-secondary', {
+        origin: 'bottom',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.partner-item', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.partner-image', {
+        origin: 'left',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.experience-item', {
+        origin: 'left',
+        delay: 400,
+        distance: '200px',
+    });
+    ScrollReveal().reveal('.experience-image', {
+        origin: 'right',
+        delay: 400,
+        distance: '200px',
+    });
 
 })(jQuery)

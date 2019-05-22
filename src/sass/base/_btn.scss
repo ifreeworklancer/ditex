@@ -4,9 +4,21 @@
     justify-content: center;
     align-items: center;
     line-height: 1;
-    font-size: 18px;
-    font-family: $headings-font-family;
-    font-weight: normal;
+    text-transform: uppercase;
     transition: .5s;
     z-index: 5;
+    box-shadow: 0px 0px 10px rgba(34, 127, 235, 0.45);
+
+    &-primary {
+
+        &:hover {
+            box-shadow: none;
+            background: $primary;
+        }
+        
+        &:focus {
+            box-shadow: none;
+            background: $dark;
+        }
+    }
 }

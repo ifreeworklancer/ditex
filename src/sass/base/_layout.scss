@@ -70,3 +70,35 @@
     }
   }
 }
+
+.contacts-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    margin-top: 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    flex-direction: row;
+  }
+
+  &-item {
+    margin-bottom: 25px;
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+
+    a {
+      color: $body-color;
+
+      svg {
+        fill: $body-color;
+        margin-right: 15px;
+      }
+    }
+  }
+}

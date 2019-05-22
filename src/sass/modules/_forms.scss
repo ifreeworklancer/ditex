@@ -1,36 +1,42 @@
 .form-group {
     position: relative;
 
-    &.in-focus {
-
-        &::before {
-            width: 100%;
-        }
-    }
-
     .form-control {
-        padding: 10px 15px;
+        padding: 12px 20px;
         background: #fff;
-        border-radius: 0;
-        border: none;
-        color: $dark;
-    }
+        border-radius: 7px;
+        border: 1px solid #F2F2F2;
+        font-weight: 300;
+        color: $body-color;
 
-    &--btn {
+        &.is-error {
+            border: 1px solid $danger;
+        }
 
-        &::before {
-            display: none;
+        &--textarea {
+            resize: none;
+        }
+
+        &::-webkit-input-placeholder {
+            opacity: .5;
+        }
+        &::-moz-placeholder {
+            opacity: .5;
+        }
+        &:-ms-input-placeholder {
+            opacity: .5;
+        }
+        &:-moz-placeholder {
+            opacity: .5;
         }
     }
 
-    &::before {
-        content: '';
-        @extend %pos;
-        top: auto;
-        width: 0;
-        height: 2px;
-        background: $dark;
-        transition: .5s;
+    .error-text {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: .75rem;
+        line-height: .875rem;
+        color: $danger;
     }
 }
 
@@ -43,34 +49,24 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
-    .form-group {
-        width: 100%;
-        margin: 0 auto 30px;
-
-        @media (min-width: map_get($grid-breakpoints, sm)) {
-            width: 30%;
-            margin: 0;
-        }
-
-        .btn {
-            height: 100%;
-
-            @media (min-width: map_get($grid-breakpoints, sm)) {
-                padding: 0 $btn-padding-x;
-            }
-        }
-    }
 }
 
 .form-column {
 
     .form-group {
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            margin-bottom: 20px;
+        }
     }
 
-    &--min {
-        max-width: 315px;
+    .btn {
+        margin-top: 10px;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            margin-top: 30px;
+        }
     }
 }

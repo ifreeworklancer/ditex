@@ -1,0 +1,23 @@
+#app-footer {
+  padding: 40px 4%;
+  background: #FFFFFF;
+}
+
+.copyright {
+  color: $secondary;
+  font-size: .875rem;
+}
+
+.footer-item {
+  margin-bottom: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: 0;
+  }
+
+  &-title {
+    font-size: $h4-font-size;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+}

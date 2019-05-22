@@ -2,30 +2,123 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  padding: 40px 30px 5px;
+  padding: 25px 15px;
   width: 95%;
-  max-width: 440px;
-  background: $primary;
   z-index: 120;
-  border-radius: 3px;
+  background: #fff;
   transition: .5s;
   opacity: 0;
   pointer-events: none;
+  box-shadow: 0px 2px 15px rgba(227, 228, 232, 0.5);
+  border-radius: 10px;
   transform: translate(-50%, -300%);
+  display: flex;
+  max-height: 75vh;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    max-width: 660px;
+    padding: 30px 50px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    max-width: 700px;
+    padding: 50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8.5px 0 8.5px 13px;
+    border-color: transparent transparent transparent $primary;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      display: block;
+      top: 35px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      top: 55px;
+    }
+  }
 
   &.active {
     opacity: 1;
     pointer-events: all;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-main {
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      min-width: 300px;
+    }
+
+    &-title {
+      color: $primary;
+      margin-bottom: 10px;
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-description {
+      p {
+        line-height: 1.875;
+        margin-bottom: 15px;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &-image {
+    position: relative;
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      display: flex;
+      align-items: center;
+      right: -110px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      right: -23px;
+    }
+
+    img {
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        width: auto;
+        height: 100%;
+      }
+    }
   }
 
   .close-modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: -30px;
+    right: 0;
     width: 20px;
     height: 20px;
     cursor: pointer;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      top: 0;
+      right: -30px;
+    }
 
     &:hover {
 
@@ -39,7 +132,8 @@
       top: 50%;
       left: 50%;
       width: 20px;
-      height: 1px;
+      height: 3px;
+      border-radius: 2px;
       background: #fff;
       opacity: .7;
 
@@ -58,7 +152,7 @@
 .modal-mask {
   @extend %pos;
   position: fixed;
-  background: rgba($dark, .8);
+  background: rgba(#000, .2);
   opacity: 0;
   pointer-events: none;
   z-index: 119;
