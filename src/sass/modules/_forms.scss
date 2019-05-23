@@ -60,6 +60,10 @@
         @media (min-width: map_get($grid-breakpoints, md)) {
             margin-bottom: 20px;
         }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     .btn {

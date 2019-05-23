@@ -65,12 +65,21 @@ window.jQuery = window.$ = jquery;
      * Phone mask
      * @type {*|jQuery.fn.init|jQuery|HTMLElement}
      */
-    const phones = $('[type="tel"]');
-    Array.from(phones).forEach(phone => {
-        new IMask(phone, {
-            mask: '+{38} (000) 000-00-00'
-        });
-    });
+
+    const elements = document.querySelectorAll('[type="tel"]');
+    const maskOptions = {
+        mask: /[\d ()\-+]+$/
+    };
+    if (elements.length) {
+        Array.from(elements).forEach(el => {
+            el.addEventListener('focus', (evt) => {
+                if (!evt.target.value.length) {
+                    evt.target.value = '+';
+                }
+            });
+            new IMask(el, maskOptions);
+        })
+    }
 
     /**
      * Modal
