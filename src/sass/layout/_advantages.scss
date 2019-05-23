@@ -6,9 +6,8 @@
 
 .advantages-item {
   position: relative;
-  width: 90%;
   margin: 0 auto 20px;
-  padding: 40px 15px;
+  padding: 30px 15px;
   background: #FFFFFF;
   box-shadow: 0px 2px 15px rgba(227, 228, 232, 0.5);
   border-radius: 10px;
@@ -27,14 +26,8 @@
 
   &-description {
     p {
-
-      @media (min-width: map_get($grid-breakpoints, sm)) {
-        max-width: 90%;
-      }
-
-      @media (min-width: map_get($grid-breakpoints, xl)) {
-        max-width: 70%;
-      }
+      font-size: .875rem;
+      margin-bottom: 0;
     }
   }
 

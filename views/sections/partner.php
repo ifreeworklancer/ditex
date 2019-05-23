@@ -1,13 +1,13 @@
 <!-- Partner -->
 <section id="partner">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-between justify-content-xl-center align-items-center">
             <div class="col-sm-6 col-lg-5">
                 <div class="partner-image">
                     <img src="<?= $partner['image']; ?>" alt="">
                 </div>
             </div>
-            <div class="col-sm-6 col-lg-5">
+            <div class="col-sm-6 pr-sm-0">
                 <div class="partner-item">
                     <h2 class="partner-item-title">
                         <?= $partner['title']; ?>

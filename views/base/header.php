@@ -26,7 +26,7 @@
         <div class="row justify-content-between align-items-center no-gutters">
             <div class="col-auto">
                 <a href="/" class="logo">
-                    <img src="<?= $logo; ?>" alt="logo">
+                    <img src="<?= $intro['logo']; ?>" alt="logo">
                 </a>
             </div>
             <div class="col-auto">

@@ -50,11 +50,11 @@
         <form action="#" class="form-quest">
             <div class="form-column">
                 <div class="form-group">
-                    <input type="text" id="user-email--quest" name="user_email__quest" class="form-control is-error"
+                    <input type="text" id="user-email--quest" name="user_email__quest" class="form-control"
                            placeholder="Email"><!-- Add class is-error -->
-                    <span class="error-text">
-                        Неверный формат e-mail, проверьте еще раз введенные данные
-                    </span>
+<!--                    <span class="error-text">-->
+<!--                        Неверный формат e-mail, проверьте еще раз введенные данные-->
+<!--                    </span>-->
                 </div>
                 <div class="form-group">
                     <textarea id="user-phone--quest" name="user_phone__quest" class="form-control form-control--textarea"

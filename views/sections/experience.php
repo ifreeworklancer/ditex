@@ -1,8 +1,8 @@
 <!-- Experience -->
 <section id="experience">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-lg-5">
+            <div class="col-sm-8 col-lg-6">
                 <div class="experience-item">
                     <h2 class="experience-item-title">
                         <?= $experience['title']; ?>

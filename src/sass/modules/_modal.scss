@@ -4,7 +4,7 @@
   left: 50%;
   padding: 25px 15px;
   width: 95%;
-  z-index: 120;
+  z-index: 1000;
   background: #fff;
   transition: .5s;
   opacity: 0;
@@ -13,7 +13,7 @@
   border-radius: 10px;
   transform: translate(-50%, -300%);
   display: flex;
-  max-height: 75vh;
+  max-height: 90vh;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     max-width: 660px;
@@ -50,14 +50,11 @@
   &.active {
     opacity: 1;
     pointer-events: all;
-    transform: translate(-50%, -40%);
-
-    @media (min-width: map_get($grid-breakpoints, sm)) {
-      transform: translate(-50%, -50%);
-    }
+    transform: translate(-50%, -50%);
   }
 
   &-main {
+    overflow: auto;
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
       min-width: 300px;
@@ -155,7 +152,7 @@
   background: rgba(#000, .2);
   opacity: 0;
   pointer-events: none;
-  z-index: 119;
+  z-index: 999;
   transition: .5s;
 
   &.active {

@@ -2,7 +2,7 @@
 <section id="target">
     <div class="container">
         <div class="row no-gutters justify-content-center align-items-center">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-xl-5">
                 <div class="target-item target-item-main">
                     <div class="target-item-image target-item-image--first">
                         <img src="<?= $target['image_target']; ?>" alt="target image">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 px-3 px-sm-0">
+            <div class="col-sm-6 col-xl-5 px-3 px-sm-0">
                 <div class="target-item target-item-secondary">
                     <div class="target-item-image"
                          style="background-image: url('<?= $target['image_arrow']; ?>');"></div>

@@ -1,8 +1,8 @@
 <!-- About -->
 <section id="about">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-7 col-lg-6 col-xl-5">
+            <div class="col-sm-8 col-lg-7 col-xl-6">
                 <div class="about-item">
                     <h2 class="about-item-title">
                         <?= $about['title']; ?>

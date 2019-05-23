@@ -2,9 +2,9 @@
 
 <!-- App-footer -->
 <footer id="app-footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-between">
-            <div class="col-sm-6 col-lg-5 col-xl-4 order-2 order-sm-1">
+            <div class="col-sm-6 col-lg-5 order-2 order-sm-1">
                 <ul class="contacts-list">
                     <li class="contacts-list-item contacts-list-item--phone">
                         <a href="tel:<?= phone_link($phone); ?>">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xl-5 d-flex flex-column flex-xl-row justify-content-between align-items-start order-1 order-sm-2">
+            <div class="col-sm-6 col-lg-4 col-xl-6 d-flex flex-column flex-xl-row justify-content-between align-items-start order-1 order-sm-2">
                 <div class="footer-item">
                     <div class="footer-item-title">
                         Остались вопросы?

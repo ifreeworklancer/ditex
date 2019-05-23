@@ -10,7 +10,7 @@
   /* all styles element (scroll-down, social-list and quote) on the page 'sass/base/_layout' */
   .scroll-down {
     position: absolute;
-    left: 2%;
+    left: -50px;
     bottom: 30%;
     transform: rotate(-90deg);
     transform-origin: center;
@@ -23,10 +23,11 @@
 
   .social-list {
     position: absolute;
-    right: 4%;
-    bottom: 80px;
+    right: 15px;
+    bottom: -150px;
 
     @media (min-width: map_get($grid-breakpoints, sm)) {
+      right: 0;
       bottom: 27%;
     }
   }
@@ -34,7 +35,7 @@
   .quote {
     position: absolute;
     top: 120px;
-    left: 4%;
+    left: 0;
     display: none;
 
     @media (min-width: map_get($grid-breakpoints, sm)) {

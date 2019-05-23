@@ -27,19 +27,19 @@ $intro = [
 $advantages = [
     'item' => [
         [
-            'image' => '../images/content/advantages/advantages-1.png',
+            'image' => '../images/content/advantages/advantages-1.svg',
             'description' => 'Мы расширяем возможности наших клиентов с помощью новаторских финансовых услуг',
         ],
         [
-            'image' => '../images/content/advantages/advantages-2.png',
+            'image' => '../images/content/advantages/advantages-2.svg',
             'description' => 'Мы специализируемся на предоставлении качественного сервиса по инвестированию средств',
         ],
         [
-            'image' => '../images/content/advantages/advantages-3.png',
+            'image' => '../images/content/advantages/advantages-3.svg',
             'description' => 'Мы предоставляем широкий спектр услуг по составлению инвестиционных портфелей',
         ],
         [
-            'image' => '../images/content/advantages/advantages-4.png',
+            'image' => '../images/content/advantages/advantages-4.svg',
             'description' => 'Мы постоянно продолжаем стремиться вперед в предоставлении передовых решений для наших клиентов',
         ],
     ],
@@ -52,9 +52,9 @@ $about = [
 ];
 
 $target = [
-    'image_target' => '../images/content/target/target-1.png',
-    'image_dart' => '../images/content/target/target-2.png',
-    'image_arrow' => '../images/content/target/target-3.png',
+    'image_target' => '../images/content/target/target-1.svg',
+    'image_dart' => '../images/content/target/target-2.svg',
+    'image_arrow' => '../images/content/target/target-3.svg',
     'title_first_block' => 'Наша основная цель —',
     'description_first_block' => '<p>помочь клиентам достичь своих инвестиционных целей без лишних препятствий</p>',
     'description_second_block' => '<p>Мы уверены, что инвестиции должны быть долгосрочными, и один и тот же инвестиционный подход имеет право на успех — независимо от того, есть ли у вас $100 000 000 или пока только $100. </p><p>Для всех  — один подход, но <span class="text-primary font-weight-bold">каждому свой портфель</span></p>',
