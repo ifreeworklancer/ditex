@@ -1,6 +1,5 @@
 <?php
-
-require_once('store.php');
+require_once __DIR__ . '/language.php';
 
 require_once('functions.php');
 

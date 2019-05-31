@@ -16,7 +16,7 @@
                         <?= $partner['description']?>
                     </div>
                     <a href="#" class="btn btn-primary open-partner">
-                        Стать партнером
+                        <?= $rest_text['become_a_partner']; ?>
                     </a>
                 </div>
             </div>

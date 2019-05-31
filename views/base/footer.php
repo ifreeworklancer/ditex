@@ -15,11 +15,11 @@
                         </a>
                     </li>
                     <li class="contacts-list-item contacts-list-item--email">
-                        <a href="mailto:<?= $email;?>">
+                        <a href="mailto:<?= $email; ?>">
                             <svg width="20" height="20">
                                 <use xlink:href="#mail-icon"></use>
                             </svg>
-                            <?= $email;?>
+                            <?= $email; ?>
                         </a>
                     </li>
                 </ul>
@@ -32,14 +32,14 @@
             <div class="col-sm-6 col-lg-4 col-xl-6 d-flex flex-column flex-xl-row justify-content-between align-items-start order-1 order-sm-2">
                 <div class="footer-item">
                     <div class="footer-item-title">
-                        Остались вопросы?
+                        <?= $contacts['any_questions']; ?>
                     </div>
                     <div class="footer-item-subtitle">
-                        Мы с радостью ответим на них
+                        <?= $contacts['answer_text']; ?>
                     </div>
                 </div>
                 <a href="#" class="btn btn-primary open-quest">
-                    Написать нам
+                    <?= $rest_text['write_to_us']; ?>
                 </a>
             </div>
         </div>

@@ -56,7 +56,8 @@ window.jQuery = window.$ = jquery;
     /**
      * Lang menu
      */
-    $('.lang-list-item-active').on(('click'), function () {
+    $('.lang-list-item-active').on(('click'), function (e) {
+        e.preventDefault();
         $(this).siblings().slideToggle();
     });
 

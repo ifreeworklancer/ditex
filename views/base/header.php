@@ -38,10 +38,31 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                    <ul class="lang-list">
-                        <li class="lang-list-item lang-list-item-active"><a href="#">en</a></li>
-                        <li class="lang-list-item"><a href="#">ru</a></li>
-                        <li class="lang-list-item"><a href="#">ua</a></li>
+                    <ul class="lang-list" id="language-switcher">
+                        <?php if ($locale == 'en'): ?>
+                            <li class="lang-list-item lang-list-item-active"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'en']) ?>">en</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'ru']) ?>">ru</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'ja']) ?>">ja</a></li>
+                        <?php endif; ?>
+                        <?php if ($locale == 'ru'): ?>
+                            <li class="lang-list-item lang-list-item-active"><a
+                                    href="<?php echo url() . '?' . http_build_query(['hl' => 'ru']) ?>">ru</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'en']) ?>">en</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'ja']) ?>">ja</a></li>
+                        <?php endif; ?>
+                        <?php if ($locale == 'ja'): ?>
+                            <li class="lang-list-item lang-list-item-active"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'ja']) ?>">ja</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'en']) ?>">en</a></li>
+                            <li class="lang-list-item"><a
+                                        href="<?php echo url() . '?' . http_build_query(['hl' => 'ru']) ?>">ru</a></li>
+                        <?php endif; ?>
                     </ul>
                     <div class="burger-menu">
                         <div class="line line--top"></div>
@@ -62,6 +83,8 @@
         </ul>
     </div>
 </header>
+
+<form></form>
 
 <!-- Modal -->
 <?php include(__DIR__ . '/../modules/modal.php'); ?>

@@ -28,7 +28,7 @@
         <a href="#advantages" class="scroll-down scroll-link">
             <div class="scroll-down-icon"></div>
             <div class="scroll-down-text">
-                детальнее
+                <?= $rest_text['more_details']; ?>
             </div>
         </a>
         <ul class="social-list">
