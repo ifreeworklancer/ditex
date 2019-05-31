@@ -4,7 +4,7 @@
 <footer id="app-footer">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-sm-6 col-lg-5 order-2 order-sm-1">
+            <div class="col-sm-6 order-2 order-sm-1">
                 <ul class="contacts-list">
                     <li class="contacts-list-item contacts-list-item--phone">
                         <a href="tel:<?= phone_link($phone); ?>">
@@ -12,6 +12,14 @@
                                 <use xlink:href="#phone-icon"></use>
                             </svg>
                             <?= $phone; ?>
+                        </a>
+                    </li>
+                    <li class="contacts-list-item contacts-list-item--phone">
+                        <a href="tel:<?= phone_link($fax); ?>">
+                            <svg width="20" height="20">
+                                <use xlink:href="#fax-icon"></use>
+                            </svg>
+                            <?= $fax; ?>
                         </a>
                     </li>
                     <li class="contacts-list-item contacts-list-item--email">

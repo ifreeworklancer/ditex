@@ -12,8 +12,9 @@ $contacts = [
     'answer_text' => 'We will gladly answer them',
 ];
 
-$phone = '+38 (111) 033 77 33';
-$email = 'info-mail@ditex.com';
+$phone = '+81 3 587 67 424';
+$fax = '+81 3 587 67 425';
+$email = 'ditex@ditex.io';
 $social_link = [
     'twitter' => 'http://www.twitter.com',
     'facebook' => 'http://www.facebook.com',
@@ -79,7 +80,7 @@ $partner = [
 
 $experience = [
     'title' => 'Experience',
-    'description' => '<p>DITEX was founded in the 20XX year. From now until today, we have earned high trust and respect from our customers.</p><p>Because in order to achieve high productivity, we offer our customers individual and optimal ideas and methods for their implementation.  Controlling, managing the processes and conditions that can be displayed on the results for our clients allows us to reliably protect their interests and the means entrusted to us.</p>',
+    'description' => '<p>DITEX was founded in the 2017 year. From now until today, we have earned high trust and respect from our customers.</p><p>Because in order to achieve high productivity, we offer our customers individual and optimal ideas and methods for their implementation.  Controlling, managing the processes and conditions that can be displayed on the results for our clients allows us to reliably protect their interests and the means entrusted to us.</p>',
     'image' => '../images/content/experience/experience-1.png',
 ];
 
